@@ -7,6 +7,10 @@
     <groupId>taboola_test</groupId>
     <artifactId>taboola_test</artifactId>
     <version>1.0-SNAPSHOT</version>
+	<properties>
+    	<maven.compiler.source>1.6</maven.compiler.source>
+    	<maven.compiler.target>1.6</maven.compiler.target>
+  	</properties>
 
     <dependencies>
         <dependency>
@@ -64,7 +68,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Calc</mainClass>
+                            <mainClass>calc</mainClass>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                         </manifest>
