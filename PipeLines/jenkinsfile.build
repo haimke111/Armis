@@ -1,4 +1,4 @@
-node("mater") {
+node("master") {
        cleanWs()       
        checkout scm
        sh "mvn clean install"
