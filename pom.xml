@@ -13,8 +13,8 @@
   	</properties>
  	<scm>
 		<url>https://github.com/haimke111/Armis</url>
-		<connection>scm:haimke111:u82007190://github.com/haimke111/Armis.git</connection>
-		<developerConnection>scm:haimke111:u82007190@github.com/haimke111/Armis.git</developerConnection>
+		<connection>scm:git:git://github.com/haimke111/Armis.git</connection>
+		<developerConnection>scm:git:git@github.com/haimke111/Armis.git</developerConnection>
 	</scm>
 
     <dependencies>
