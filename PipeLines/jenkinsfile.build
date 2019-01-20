@@ -1,5 +1,29 @@
-node("master") {
-       cleanWs()       
-       checkout scm
-       sh "mvn clean install"
+//node("master") {
+//       cleanWs()       
+//       checkout scm
+//       sh "mvn clean install"
+//}
+pipeline {
+    agent any
+    tools {
+        maven 'M1'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+				cleanWs()
+            }
+        }
+		stage ('chekout') {
+			steps {
+				checkout scm
+			}
+		}
+        stage ('Build') {
+            steps {
+                sh 'mvn clean install' 
+            }
+        }
+}
+    }
 }
