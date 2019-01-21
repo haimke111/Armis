@@ -132,7 +132,7 @@
             			<configuration>
             				<license>GPL (c) 2005, SWWDC</license>
               				<attach>false</attach> <!-- don't attach RPM -->
-              				<group>Application/Misc</group> <!-- set RPM group -->
+              				<group>Amusements/Games</group> <!-- set RPM group -->
               				<mappings>
                                 <mapping>
                                 <directory>/tmp</directory>
