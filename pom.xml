@@ -102,17 +102,22 @@
                 <version>2.5.2</version>
                 <executions>
 				 <execution>
-				 <id>default</id>
-				 <goals>
-				 <goal>perform</goal>
-				 </goals>
-                <configuration>
+				  <id>default</id>
+				  <goals>
+				  <goal>perform</goal>
+				  </goals>
+                  <configuration>
                     <tagBase>https://github.com/haimke111/Armis</tagBase>
                     <pomFileName>Build-calc/pom.xml</pomFileName>
                     <releaseProfiles>release</releaseProfiles>
-                </configuration>
+                  </configuration>
                  </execution>
- </executions>
+ 			    </executions>
+            </plugin>
+            <plugin>
+            	<groupId>org.codehaus.mojo</groupId>
+				<artifactId>rpm-maven-plugin</artifactId>
+				<version>2.0.1</version>
             </plugin>               
        
         </plugins>

@@ -22,12 +22,17 @@ pipeline {
 		}
         stage ('Build') {
             steps {
-                sh 'mvn clean install' 
+                sh 'mvn clean package' 
             }
         }
-        stage ('release') {
+//        stage ('release') {
+//            steps {
+//                sh 'mvn release:prepare' 
+//            }
+        }
+        stage ('create rpm') {
             steps {
-                sh 'mvn release:prepare' 
+                sh 'mvn rpm:rpm' 
             }
         }
 	}
