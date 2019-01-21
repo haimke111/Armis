@@ -107,7 +107,7 @@
 				 </goals>
                 <configuration>
                     <tagBase>https://github.com/haimke111/Armis</tagBase>
-                    <pomFileName>Armis/pom.xml</pomFileName>
+                    <pomFileName>Build-calc/pom.xml</pomFileName>
                     <releaseProfiles>release</releaseProfiles>
                 </configuration>
                  </execution>
