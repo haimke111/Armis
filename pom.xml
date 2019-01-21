@@ -118,6 +118,24 @@
             	<groupId>org.codehaus.mojo</groupId>
 				<artifactId>rpm-maven-plugin</artifactId>
 				<version>2.0.1</version>
+				<executions>
+          			<execution>
+          
+            			<goals>
+              				<goal>rpm</goal>
+            			</goals>
+            
+            			<configuration>
+              				<attach>false</attach> <!-- don't attach RPM -->
+              				<group>Application/Misc</group> <!-- set RPM group -->
+              				<mappings>
+                                <mapping>
+                                <directory>/tmp</directory>
+                                </mapping>
+                            </mappings>
+              			</configuration>
+              		</execution>
+              	</executions>
             </plugin>               
        
         </plugins>
