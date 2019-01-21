@@ -29,7 +29,7 @@ pipeline {
 //            steps {
 //                sh 'mvn release:prepare' 
 //            }
-        }
+//        }
         stage ('create rpm') {
             steps {
                 sh 'mvn rpm:rpm' 
