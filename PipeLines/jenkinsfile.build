@@ -25,15 +25,15 @@ pipeline {
                 sh 'mvn clean package' 
             }
         }
-//        stage ('release') {
-//            steps {
-//                sh 'mvn release:prepare' 
-//            }
-//        }
-        stage ('create rpm') {
+        stage ('release') {
             steps {
-                sh 'mvn rpm:rpm' 
+                sh 'mvn release:prepare' 
             }
         }
+//        stage ('create rpm') {
+//            steps {
+//                sh 'mvn rpm:rpm' 
+//            }
+//        }
 	}
    }

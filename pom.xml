@@ -112,7 +112,7 @@
 				  </goals>
                   <configuration>
                     <tagBase>https://github.com/haimke111/Armis</tagBase>
-                    <pomFileName>Build-calc/pom.xml</pomFileName>
+                    <pomFileName>calc/pom.xml</pomFileName>
                     <releaseProfiles>release</releaseProfiles>
                   </configuration>
                  </execution>
@@ -121,6 +121,7 @@
             <plugin>
             	<groupId>org.codehaus.mojo</groupId>
 				<artifactId>rpm-maven-plugin</artifactId>
+				<name>calc</name>
 				<version>2.2.0</version>
 				<executions>
           			<execution>
